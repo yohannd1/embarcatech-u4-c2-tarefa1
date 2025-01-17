@@ -58,3 +58,6 @@ target_link_libraries(u4_c2_tarefa1
 )
 
 pico_add_extra_outputs(u4_c2_tarefa1)
+
+# Enable UART
+pico_enable_stdio_uart(${PROJECT_NAME} 1)
