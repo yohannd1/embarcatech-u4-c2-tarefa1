@@ -35,6 +35,7 @@ pico_sdk_init()
 
 add_executable(u4_c2_tarefa1
     src/main.c
+    src/buzzer.c
 )
 
 pico_set_program_name(u4_c2_tarefa1 "U4, C2, Tarefa 1")
@@ -46,6 +47,7 @@ pico_enable_stdio_usb(u4_c2_tarefa1 1)
 # Add the standard library to the build
 target_link_libraries(u4_c2_tarefa1
     pico_stdlib
+    hardware_pwm
 )
 
 # Add the standard include files to the build
