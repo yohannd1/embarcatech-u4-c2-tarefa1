@@ -35,6 +35,7 @@ pico_sdk_init()
 
 add_executable(u4_c2_tarefa1
     src/main.c
+    src/buzzer.c
     src/teclado.c
 )
 
@@ -47,11 +48,12 @@ pico_enable_stdio_usb(u4_c2_tarefa1 1)
 # Add the standard library to the build
 target_link_libraries(u4_c2_tarefa1
     pico_stdlib
+    hardware_pwm
 )
 
 # Add the standard include files to the build
 target_include_directories(u4_c2_tarefa1 PRIVATE
-  ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
