@@ -1,0 +1,1 @@
+void inicializar_teclado(uint pinos_colunas[],uint pinos_linhas[], int tamanho_array_colunas, int tamanho_array_linhas);
