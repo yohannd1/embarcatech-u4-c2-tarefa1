@@ -18,7 +18,13 @@
       "rotate": 270,
       "attrs": { "common": "cathode" }
     },
-    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -338, "left": -311.2, "attrs": {} },
+    {
+      "type": "wokwi-membrane-keypad",
+      "id": "keypad1",
+      "top": -366.8,
+      "left": -311.2,
+      "attrs": {}
+    },
     {
       "type": "wokwi-resistor",
       "id": "r1",
@@ -61,14 +67,14 @@
     [ "r2:2", "pico:GP13", "red", [ "h75.6", "v-63.99" ] ],
     [ "pico:GP10", "bz1:2", "red", [ "h-226.85", "v-13.25" ] ],
     [ "pico:GND.3", "bz1:1", "black", [ "h-217.25", "v6.35" ] ],
-    [ "keypad1:R1", "pico:GP0", "#8f4814", [ "v0" ] ],
-    [ "pico:GP1", "keypad1:R2", "red", [ "h0" ] ],
-    [ "pico:GP2", "keypad1:R3", "orange", [ "h0" ] ],
-    [ "pico:GP3", "keypad1:R4", "gold", [ "h0" ] ],
-    [ "pico:GP4", "keypad1:C1", "green", [ "h0" ] ],
-    [ "pico:GP8", "keypad1:C2", "blue", [ "h0" ] ],
-    [ "pico:GP9", "keypad1:C3", "violet", [ "h0" ] ],
-    [ "keypad1:C4", "pico:GP16", "gray", [ "v259.2", "h216.64" ] ]
+    [ "pico:GP1", "keypad1:R1", "#8f4814", [ "h0" ] ],
+    [ "keypad1:R2", "pico:GP2", "red", [ "v0" ] ],
+    [ "keypad1:R3", "pico:GP3", "orange", [ "v0" ] ],
+    [ "keypad1:R4", "pico:GP4", "gold", [ "v0" ] ],
+    [ "pico:GP8", "keypad1:C1", "green", [ "h0" ] ],
+    [ "pico:GP9", "keypad1:C2", "blue", [ "h0" ] ],
+    [ "pico:GP16", "keypad1:C3", "violet", [ "h23.06", "v-214.41", "h-249.45" ] ],
+    [ "keypad1:C4", "pico:GP17", "gray", [ "v19.2", "h230.1", "v195.21" ] ]
   ],
   "dependencies": {}
 }
