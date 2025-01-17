@@ -19,9 +19,37 @@ char mapa_caracteres[4][4] = {
 int main(void) {
 	stdio_init_all();
 
-	for (int i = 0;; i++) {
-		printf("Hello %d\n", i);
-		sleep_ms(1000);
+	inicializar_teclado(pinos_colunas,pinos_linhas,tamanho_array_colunas,tamanho_array_linhas);
+
+	while (true) {
+		char tecla = obter_tecla_pressionada(pinos_colunas,pinos_linhas,tamanho_array_colunas,tamanho_array_linhas,mapa_caracteres);
+		
+		if(tecla){
+			printf("Tecla pressionada: %c\n",tecla);
+		}
+
+		switch (tecla){
+			case 'A':
+				// Liga o led vermelho
+			break;
+
+			case 'B':
+				// Liga o led azul
+			break;
+
+			case 'C':
+				// Liga o led verde
+			break;
+
+			case 'D':
+				// Liga o buzzer
+			break;
+		
+			default:
+			break;
+		}
+
+		sleep_ms(500);
 	}
 
 	return 0;
