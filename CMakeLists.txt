@@ -36,6 +36,7 @@ pico_sdk_init()
 add_executable(u4_c2_tarefa1
     src/main.c
     src/buzzer.c
+    src/teclado.c
 )
 
 pico_set_program_name(u4_c2_tarefa1 "U4, C2, Tarefa 1")
@@ -52,7 +53,7 @@ target_link_libraries(u4_c2_tarefa1
 
 # Add the standard include files to the build
 target_include_directories(u4_c2_tarefa1 PRIVATE
-  ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}
 )
 
 # Add any user requested libraries
@@ -60,3 +61,6 @@ target_link_libraries(u4_c2_tarefa1
 )
 
 pico_add_extra_outputs(u4_c2_tarefa1)
+
+# Enable UART
+pico_enable_stdio_uart(${PROJECT_NAME} 1)
