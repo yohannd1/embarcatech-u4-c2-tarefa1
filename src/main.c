@@ -29,6 +29,8 @@ int main(void) {
 
 	inicializar_teclado(pinos_colunas,pinos_linhas,tamanho_array_colunas,tamanho_array_linhas);
 
+	init_led();
+
 	while (true) {
 		char tecla = obter_tecla_pressionada(pinos_colunas,pinos_linhas,tamanho_array_colunas,tamanho_array_linhas,mapa_caracteres);
 		
@@ -52,13 +54,18 @@ int main(void) {
 				set_led_color(false, false, true);
 				break;
 
-			case 'D':
+			case '#':
 				// Tocar o buzzer
 				Buzzer_play(&bz, 2090, 500);
 				break;
+
+			case 'D':
+				set_led_color(true,true,true);
+			break;
 		
 			default:
-				break;
+				set_led_color(false,false,false);
+			break;
 		}
 
 		sleep_ms(500);
