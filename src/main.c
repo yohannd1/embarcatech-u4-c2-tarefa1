@@ -3,6 +3,7 @@
 
 #include "teclado.h"
 #include "buzzer.h"
+#include "led.h"
 
 #define BUZZER_PIN 10
 
@@ -35,17 +36,20 @@ int main(void) {
 			printf("Tecla pressionada: %c\n",tecla);
 		}
 
-		switch (tecla){
+		switch (tecla) {
 			case 'A':
-				// Liga o led vermelho
+				// Ligar o led vermelho
+				set_led_color(true, false, false);
 				break;
 
 			case 'B':
-				// Liga o led azul
+				// Ligar o led verde
+				set_led_color(false, true, false);
 				break;
 
 			case 'C':
-				// Liga o led verde
+				// Ligar o led azul
+				set_led_color(false, false, true);
 				break;
 
 			case 'D':
@@ -54,7 +58,7 @@ int main(void) {
 				break;
 		
 			default:
-			break;
+				break;
 		}
 
 		sleep_ms(500);
