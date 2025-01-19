@@ -37,6 +37,7 @@ add_executable(u4_c2_tarefa1
     src/main.c
     src/buzzer.c
     src/teclado.c
+    src/led.c
 )
 
 pico_set_program_name(u4_c2_tarefa1 "U4, C2, Tarefa 1")
