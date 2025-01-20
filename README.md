@@ -2,7 +2,11 @@ Unidade 4, Capítulo 2, Tarefa 1
 
 # Microcontroladores - GPIO
 
-Este projeto utiliza um teclado matricial 4x4 conectado a uma placa controladora (como a Raspberry Pi Pico) para realizar diferentes ações, como acender LEDs e tocar um buzzer, dependendo da tecla pressionada. 
+Este projeto utiliza um teclado matricial 4x4 conectado a uma placa controladora (como a Raspberry Pi Pico) para realizar diferentes ações, como acender LEDs e tocar um buzzer, dependendo da tecla pressionada.
+
+## Demonstração
+
+Um vídeo de demonstração do projeto está disponível: https://drive.google.com/file/d/1JnJQ2fG5KYBUVFD0r5q81tXiGQ0dcqPO/view
 
 ## Funcionalidades Principais
 
